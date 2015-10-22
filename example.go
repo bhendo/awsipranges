@@ -14,7 +14,7 @@ func main() {
 
 	if err != nil { fmt.Println(err) } else {
 		
-		/*byRegion, _ := data.PrefixesByRegion("us-east-1")
+		byRegion, _ := data.PrefixesByRegion("us-east-1")
 
 		for i, ip_range := range byRegion {
 			fmt.Printf("%d: %s\n", i, ip_range)
@@ -24,7 +24,7 @@ func main() {
 
 		for i, ip_range := range byService {
 			fmt.Printf("%d: %s\n", i, ip_range)
-		}*/
+		}
 
 		byRegionAndService, _ := data.PrefixesByRegionAndService("us-east-1", "amazon")
 
