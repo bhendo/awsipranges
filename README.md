@@ -1,2 +1,2 @@
 # go-aws-ip-ranges
-A tool for parsing https://ip-ranges.amazonaws.com/ip-ranges.json
+A simple package for parsing and searching https://ip-ranges.amazonaws.com/ip-ranges.json
