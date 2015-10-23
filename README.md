@@ -16,8 +16,8 @@ func main() {
 	a, err := awsipranges.New(http.DefaultClient)
 	if err != nil { fmt.Println(err) }
 	
-	fmt.Println("SyncToken: %s and CreateDate: %s", a.SyncToken, a.CreateDate)
-	fmt.Println("First Prefix: %s is service: %s in region: %s", a.Prefixes[0].IP_Prefix, a.Prefixes[0].Service, a.Prefixes[0].Region)	
+	fmt.Printf("SyncToken: %s and CreateDate: %s\n", a.SyncToken, a.CreateDate)
+	fmt.Printf("First Prefix: %s is service: %s in region: %s\n", a.Prefixes[0].IP_Prefix, a.Prefixes[0].Service, a.Prefixes[0].Region)		
 
 	region, err := a.PrefixesByRegion("us-east-1")
 	if err != nil { fmt.Println(err) }
